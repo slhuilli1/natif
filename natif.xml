@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.0" type="plugin" group="Content">
+	<name>Natif</name>
+	<author>Sebastien LHUILLIER</author>
+	<creationDate>Février 2024</creationDate>
+	<copyright>Sébastien LHUILLIER</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>sebastien.lhuillier+joomla@gmail.com</authorEmail>
+	<authorUrl>www.sebastien-lhuillier.com</authorUrl>
+	<version>1.0</version>
+	<description>Ce plugin prend en compte ou pas l'affichage des fichiers natifs (word/excel) en sus des PDF</description>
+	<files>
+		<filename plugin="natif">natif.php</filename>
+		<filename>natif.xml</filename>			
+		<filename>style.css</filename>	
+	</files>
+	
+	<config>
+	<fields name="params">
+		<fieldset name="basic">
+			<field name="show_natif" type="radio" default="0" label="Natifs" description="Affiche les liens vers les fichier natifs">
+				<option value="1">Oui</option>
+				<option value="0">Non</option>
+			</field>
+			
+			<field name="note2" type="note" class="alert" label="Utilisation" description="Dans les liens a href vers les PDF, rajouter data-natif=&quot;chemin_vers_le_fichier_natif&quot; (document modifiable : word, excel, powerpoint,...)"/>
+		</fieldset>	
+	</fields>
+	</config>	
+</extension>
