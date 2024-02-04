@@ -1,0 +1,9 @@
+ .fichier-natif::before{
+	 content:"\270D";
+	 color:red;
+	 font-size:200%;
+ }
+ 
+ .fichier-natif{
+	 font-variant-position: super;
+ }
